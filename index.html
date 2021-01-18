@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bannerlord.UIExtenderEx | UIExtenderEx Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bannerlord.UIExtenderEx | UIExtenderEx Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/collapse-container.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jordnkr/collapsible/master/collapsible.css"></head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bannerlorduiextenderex">Bannerlord.UIExtenderEx</h1>
+
+<p align="center">
+  <!--
+  <a href="https://github.com/BUTR/Bannerlord.UIExtenderEx" alt="Logo">
+  <img src="https://github.com/BUTR/Bannerlord.UIExtenderEx/blob/dev/resources/Butter.png?raw=true" /></a>
+  </br>
+  -->
+  <a href="https://github.com/BUTR/Bannerlord.UIExtenderEx" alt="Lines Of Code">
+  <img src="https://tokei.rs/b1/github/BUTR/Bannerlord.UIExtenderEx?category=code"></a>
+  <a href="https://www.codefactor.io/repository/github/butr/bannerlord.uiextenderex"><img src="https://www.codefactor.io/repository/github/butr/bannerlord.uiextenderex/badge" alt="CodeFactor"></a>
+  <br>
+  <a href="https://github.com/BUTR/Bannerlord.UIExtenderEx/actions?query=workflow%3ATest"><img src="https://github.com/BUTR/Bannerlord.UIExtenderEx/workflows/Test/badge.svg?branch=dev&event=push" alt="Test"></a>
+  <a href="https://codecov.io/gh/BUTR/Bannerlord.UIExtenderEx"><img src="https://codecov.io/gh/BUTR/Bannerlord.UIExtenderEx/branch/dev/graph/badge.svg">
+   </a>
+  </br>
+  <a href="https://www.nuget.org/packages/Bannerlord.UIExtenderEx" alt="NuGet Bannerlord.UIExtenderEx">
+  <img src="https://img.shields.io/nuget/v/Bannerlord.UIExtenderEx.svg?label=NuGet%20Bannerlord.UIExtenderEx&colorB=blue"></a>
+  <a href="https://butr.github.io/Bannerlord.UIExtenderEx" alt="Documentation">
+  <img src="https://img.shields.io/badge/Documentation-%F0%9F%94%8D-blue?style=flat"></a>
+  <br>
+  <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2102" alt="Nexus UIExtenderEx">
+  <img src="https://img.shields.io/badge/Nexus-UIExtenderEx-yellow.svg"></a>  
+  <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2102" alt="UIExtenderEx">
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fnexusmods-version-pzk4e0ejol6j.runkit.sh%3FgameId%3Dmountandblade2bannerlord%26modId%3D2102"></a>
+  <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2102" alt="Nexus UIExtenderEx">
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fnexusmods-downloads-ayuqql60xfxb.runkit.sh%2F%3Ftype%3Dunique%26gameId%3D3174%26modId%3D2102"></a>
+  <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2102" alt="Nexus UIExtenderEx">
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fnexusmods-downloads-ayuqql60xfxb.runkit.sh%2F%3Ftype%3Dtotal%26gameId%3D3174%26modId%3D2102"></a>
+  </br>
+</p>
+<p>A library that enables multiple mods to alter standard game interface.</p>
+<h2 id="installation">Installation</h2>
+<p>This module should be one of the highest in loading order. Ideally, it should be loaded after <code>Bannerlord.Harmony</code> or <code>Bannerlord.ButterLib</code>.</p>
+<h2 id="for-players">For Players</h2>
+<p>This mod is a dependency mod that does not provide anything by itself. You need to additionaly install mods that use it.</p>
+<h2 id="quickstart">Quickstart</h2>
+<p>You mark your <em>prefab extensions</em> based on one of the <code>IPrefabPatch</code> descendants and marking it with <code>PrefabExtension</code> attribute, therefore enabling you to make additions to the specified Movie's XML data.</p>
+<p>Example of inserting <code>XML</code> at a specific position:</p>
+<pre><code class="lang-csharp">    [PrefabExtension(&quot;Insert&quot;, &quot;descendant::OptionsScreenWidget[@Id='Options']/Children/Standard.TopPanel/Children/ListPanel/Children&quot;)]
+    internal class TestPrefabExtensionInsertPatch : PrefabExtensionInsertPatch
+    {
+        public override string Id =&gt; &quot;Insert&quot;;
+        public override int Position =&gt; 3;
+        private XmlDocument XmlDocument { get; } = new XmlDocument();
+
+        public TestPrefabExtensionInsertPatch()
+        {
+            XmlDocument.LoadXml(&quot;&lt;OptionsTabToggle Id=\&quot;Insert\&quot; /&gt;&quot;);
+        }
+
+        public override XmlDocument GetPrefabExtension() =&gt; XmlDocument;
+    }
+</code></pre>
+<p>Example of replacing <code>XML</code>:</p>
+<pre><code class="lang-csharp">    [PrefabExtension(&quot;Replace&quot;, &quot;descendant::OptionsScreenWidget[@Id='Options']/Children/Standard.TopPanel/Children/ListPanel/Children/OptionsTabToggle[@Id='Replace']&quot;)]
+    internal class TestPrefabExtensionReplacePatch : PrefabExtensionReplacePatch
+    {
+        public override string Id =&gt; &quot;Replace&quot;;
+        private XmlDocument XmlDocument { get; } = new XmlDocument();
+
+        public TestPrefabExtensionReplacePatch()
+        {
+            XmlDocument.LoadXml(&quot;&lt;OptionsTabToggle Id=\&quot;Replaced\&quot; /&gt;&quot;);
+        }
+
+        public override XmlDocument GetPrefabExtension() =&gt; XmlDocument;
+    }
+</code></pre>
+<p>Example of inserting <code>XML</code> after a specific element:</p>
+<pre><code class="lang-csharp">    [PrefabExtension(&quot;InsertAsSiblingAppend&quot;, &quot;descendant::OptionsScreenWidget[@Id='Options']/Children/Standard.TopPanel/Children/ListPanel/Children/OptionsTabToggle[@Id='InsertAsSibling']&quot;)]
+    internal class TestPrefabExtensionInsertAsSiblingAppendPatch : PrefabExtensionInsertAsSiblingPatch
+    {
+        public override string Id =&gt; &quot;InsertAsSiblingAppend&quot;;
+        public override InsertType Type =&gt; InsertType.Append;
+        private XmlDocument XmlDocument { get; } = new XmlDocument();
+
+        public TestPrefabExtensionInsertAsSiblingAppendPatch()
+        {
+            XmlDocument.LoadXml(&quot;&lt;OptionsTabToggle Id=\&quot;InsertAsSiblingAppend\&quot; /&gt;&quot;);
+        }
+
+        public override XmlDocument GetPrefabExtension() =&gt; XmlDocument;
+    }
+</code></pre>
+<p>Example of adding or replacing  <code>XML</code> attribute:</p>
+<pre><code class="lang-csharp">    [PrefabExtension(&quot;SetAttribute&quot;, &quot;descendant::OptionsScreenWidget[@Id='Options']/Children/Standard.TopPanel/Children/ListPanel/Children/OptionsTabToggle[@Id='SetAttribute']&quot;)]
+    internal class TestPrefabExtensionSetAttributePatch : PrefabExtensionSetAttributePatch
+    {
+        public override string Id =&gt; &quot;SetAttribute&quot;;
+        public override string Attribute =&gt; &quot;CustomAttribute&quot;;
+        public override string Value =&gt; &quot;Value&quot;;
+    }
+</code></pre>
+<p>Example of inserting <code>XML</code> before a specific element:</p>
+<pre><code class="lang-csharp">    [PrefabExtension(&quot;InsertAsSiblingPrepend&quot;, &quot;descendant::OptionsScreenWidget[@Id='Options']/Children/Standard.TopPanel/Children/ListPanel/Children/OptionsTabToggle[@Id='InsertAsSibling']&quot;)]
+    internal class TestPrefabExtensionInsertAsSiblingPrependPatch : PrefabExtensionInsertAsSiblingPatch
+    {
+        public override string Id =&gt; &quot;InsertAsSiblingPrepend&quot;;
+        public override InsertType Type =&gt; InsertType.Prepend;
+        private XmlDocument XmlDocument { get; } = new XmlDocument();
+
+        public TestPrefabExtensionInsertAsSiblingPrependPatch()
+        {
+            XmlDocument.LoadXml(&quot;&lt;OptionsTabToggle Id=\&quot;InsertAsSiblingPrepend\&quot; /&gt;&quot;);
+        }
+
+        public override XmlDocument GetPrefabExtension() =&gt; XmlDocument;
+    }
+</code></pre>
+<p>In order to add data to the prefab, you need to add properties to the target datasource class, this is done by making a <em>mixin</em> class, inheriting from <code>BaseViewModelMixin&lt;T&gt;</code> and marking it with <code>ViewModelMixin</code> attribute. This class will be mixed in to the target view model <code>T</code>, making fields and methods accessible in the prefab:</p>
+<pre><code class="lang-csharp">    [ViewModelMixin]
+    public class OptionsVMMixin : BaseViewModelMixin&lt;OptionsVM&gt;
+    {
+        private readonly ModOptionsVM _modOptions;
+
+        [DataSourceProperty]
+        public ModOptionsVM ModOptions
+        {
+            get
+            {
+                return _modOptions;
+            }
+        }
+
+        public OptionsVMMixin(OptionsVM vm) : base(vm)
+        {
+            _modOptions = new ModOptionsVM();
+        }
+
+        [DataSourceMethod]
+        public void ExecuteCloseOptions()
+        {
+            ModOptions.ExecuteCancelInternal(false);
+            ViewModel?.ExecuteCloseOptions();
+        }
+    }
+</code></pre>
+<p>The last thing is to call <code>UIExtender.Register</code> and <code>UIExtender.Enable</code> to apply your extensions:</p>
+<pre><code class="lang-cs">      public class CustomSubModule : MBSubModuleBase
+      {
+          protected override void OnSubModuleLoad()
+          {
+              base.OnSubModuleLoad();
+            
+              _extender = new UIExtender(&quot;ModuleName&quot;);
+              _extender.Register(typeof(CustomSubModule).Assembly);
+              _extender.Enable();
+          }
+        }
+</code></pre>
+<p>To use the <code>OnRefresh</code> overload you will need to specify for UIExtenderEx the underlying method that acts as the conceptual 'Refresh' method in the <code>ViewModel</code>.<br>
+For example, <code>MapInfoVM</code> has a method <code>Refresh</code>.<br>
+If such method exists, specify it in the <code>ViewModelMixin</code> like this:</p>
+<pre><code class="lang-csharp">[ViewModelMixin(&quot;Refresh&quot;)] // or [ViewModelMixin(nameof(MapInfoVM.Refresh))] // if the method is public
+public class MapInfoMixin : BaseViewModelMixin&lt;MapInfoVM&gt;
+</code></pre>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/tree/dev/src/MCM.UI/UIExtenderEx">Bannerlord.MBOptionScreen</a></li>
+<li><a href="https://github.com/tbeswick96/BannerlordYetAnotherPartyOrganiser">Yet Another Party Organiser</a></li>
+</ul>
+<hr><p>This page was last modified at 08/26/2020 00:07:01 +03:00 (UTC).</p><div class="collapse-container last-modified" id="accordion"><span><span class="arrow-r"></span>Commit Message</span><div><pre><code>Author:    Vitaly Mikhailov
+Commit:    804d0990cbfbab4d50a20716d1c09c098de0fdf8
+</code></pre><pre><code class="xml">Removed .idea
+
+Added docs
+</code></pre></div></div></article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/BUTR/Bannerlord.UIExtenderEx/blob/dev/docs/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 BUTR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).collapsible();
+  } );</script><script type="text/javascript" src="https://cdn.rawgit.com/jordnkr/collapsible/master/jquery.collapsible.min.js"></script></body>
+</html>
